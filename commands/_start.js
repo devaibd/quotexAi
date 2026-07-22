@@ -1,19 +1,21 @@
 /*CMD
-  command: 📊 Get Signal
+  command: /start
   help:
   need_reply: false
   auto_retry_time:
+  answer:
+  keyboard:
 CMD*/
 
 Api.sendMessage({
   text:
-"📊 *QUOTEX OTC SIGNAL*\n" +
-"━━━━━━━━━━━━━━━━━━\n" +
-"🌐 *Market:* OTC\n" +
-"💱 *Pair:* USD/BRL (OTC)\n\n" +
-"🕒 *Entry Time:* 14:30:00\n" +
-"⏱️ *Expiry:* 1 Minute\n\n" +
-"📈 *Direction:* ⬆️ UP\n\n" +
-"⚠️ Trading involves risk. No outcome is guaranteed.",
-  parse_mode: "Markdown"
+"👋 *Welcome to the VIP QUOTEX AI Signal Bot!*\n\nChoose an option below:\n\n📊 Get Signal\n📚 Risk Rules\n🌐 Open Broker App",
+  parse_mode: "Markdown",
+  reply_markup: {
+    keyboard: [
+      [{ text: "📊 Get Signal" }, { text: "📚 Risk Rules" }],
+      [{ text: "🌐 Open Broker App", web_app: { url: "https://qxbroker.com" } }]
+    ],
+    resize_keyboard: true
+  }
 });
