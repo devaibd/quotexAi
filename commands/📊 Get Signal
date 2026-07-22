@@ -2,4 +2,4 @@ Api.sendMessage({
   text:
 "💰 *Risk Rules*\n\n• Risk only 1–2% per trade.\n• Stop after 3 consecutive losses.\n• Set a daily profit target.\n• Never chase losses.",
   parse_mode: "Markdown"
-});
+}); 
