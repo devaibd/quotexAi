@@ -1,0 +1,23 @@
+Api.sendMessage({
+  text:
+"👋 *Welcome to VIP QUOTEX AI SIGNAL BOT*\n\n" +
+"নিচের একটি অপশন নির্বাচন করুন।",
+  parse_mode: "Markdown",
+  reply_markup: {
+    keyboard: [
+      [
+        { text: "📊 Get Signal" },
+        { text: "📚 Risk Rules" }
+      ],
+      [
+        {
+          text: "🌐 Open Broker App",
+          web_app: {
+            url: "https://qxbroker.com"
+          }
+        }
+      ]
+    ],
+    resize_keyboard: true
+  }
+});
