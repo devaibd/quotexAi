@@ -1,0 +1,5 @@
+Api.sendMessage({
+  text:
+"📊 *QUOTEX OTC SIGNAL*\n━━━━━━━━━━━━━━━━━━\n🌐 *Market:* OTC\n💱 *Pair:* USD/BRL (OTC)\n\n🕒 *Entry Time:* 14:30:00\n⏱️ *Expiry:* 1 Minute\n\n📈 *Direction:* ⬆️ UP (BUY)\n📊 *Confidence:* 75%\n\n💰 *Money Management*\n• Risk 1–2% per trade\n• Maximum 3 consecutive losses\n• Use Stop Loss & Daily Profit Target\n━━━━━━━━━━━━━━━━━━\n⚠️ _Trading involves financial risk. Trade responsibly._",
+  parse_mode: "Markdown"
+});
